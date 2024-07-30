@@ -7,7 +7,7 @@ FROM nginx:latest
 
 # Copy custom HTML files into the Nginx HTML directory
 # Replace 'index.html' with your custom file if you have one
-COPY ./html /usr/share/nginx/html
+COPY busapp-webapp/ /usr/share/nginx/html
 
 # Expose port 80 to access Nginx
 EXPOSE 80
